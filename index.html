@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<title>201∞“无限爱”情人节系列</title>
+
+</head>
+<style>
+.bofang{width: 1rem;height: 1rem;position: absolute;top:10%;left:45%;}
+	
+</style>
+<body>
+
+	    	<div class="swiper-container">
+
+
+
+
+	    	        <div class="swiper-wrapper">
+	                 	<div class="swiper-slide s1">
+	    	            	<div class="video" id="video">
+	    	            		<video  type="video/mp4" autoplay="autoplay" preload="none"   x5-playsinline="" playsinline="" preload="auto" loop="loop" poster="./images/shiping.jpg"  controls>
+	    	            			<source src="video/2018.010610s.mp4" type="video/mp4">
+	    	            				 您的浏览器不支持 HTML5 video 标签。
+	    	            			</source>
+	    	            		</video>
+	    	            	</div>
+<!-- 	    	            	<div class="bofang">
+	    	            	     <img src="images/timg.gif" alt="">
+	    	            	</div> -->
+
+
+
+
+
+	                 	</div>
+
+
+
+                   		<div class="swiper-slide s2">
+                 			 <div class="ani" id="ws1" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s"  >
+                 			 	<img src="images/s111.png" alt="">
+                 			 </div>
+                 			 <div id="sw12" class="img ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                 			 	<img src="images/jiezhi1.png" alt="">
+                 			 </div>
+                 			 <div id="sw112" class="img ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                 			 	<img src="images/wenzi1.png" alt="">
+                 			 </div>
+                   		</div>
+
+
+                   		<div class="swiper-slide s3">
+                 			 <div class="ani" id="ws2" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+                 			 	<img src="images/p37.png" alt="">
+                 			 </div>
+                 			 <div id="sw13" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                 			 	<img src="images/xiangshou.png" alt="">
+                 			 </div>
+                   		</div>
+
+
+    	            	<div class="swiper-slide s4">
+	             			 <div class="ani" id="ws3" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+	             			 	<img src="images/c1.png" alt="">
+	             			 </div>
+	             			  <div id="sw14" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                 			 	<img src="images/c2.png" alt="">
+                 			 </div>
+               			</div>
+
+
+               			<div class="swiper-slide s5">
+	             			 <div class="ani" id="ws4" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+	             			 	<img src="images/s1.png" alt="">
+	             			 </div>
+	             			 <div id="sw15" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                 			 	<img src="images/shou.png" alt="">
+                 			 </div>
+               			</div>
+						<div class="swiper-slide s6">
+	             			<div class="ani" id="ws444" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+	             				<img src="images/555555.png" alt="">
+	             			</div>
+	             			 <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NjEzNDIyMA==&scene=124#wechat_redirect">
+	             			 	关注公众号
+	             			 </a>
+               			</div>
+	    	        </div>
+	    	        <!-- 如果需要分页器 -->
+	                <img src="images/arrow.png" id="array" class="resize"> 
+	    	        <div class="swiper-pagination"></div>
+	    	    </div>
+</body>
+
+		<script src="js/swiper.min.js"></script>
+	   	<script src="js/swiper.animate.min.js"></script>
+	   		   	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	   		   	<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+	   		   	<script src="http://ms0.meituan.net/touch/module/truck.23648f77.js"></script>
+	   	<script>
+	   		// document.addEventListener('touchmove', function (event) {
+	   		// event.preventDefault();
+	   		// }, false);
+	   		// 
+	  	   		 document.addEventListener("WeixinJSBridgeReady", function () { 
+	   		    document.getElementById('video').play(); 
+	   		}, false);
+
+	   		var mySwiper = new Swiper ('.swiper-container', {
+	   		        direction: 'vertical',
+	   		        loop: true,
+	   		        // 如果需要分页器
+	              mousewheelControl : true, 
+	   		        pagination: '.swiper-pagination',
+	   		        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+	   		            swiperAnimateCache(swiper); //隐藏动画元素 
+	   		            swiperAnimate(swiper); //初始化完成开始动画
+	   		          }, 
+	   		          onSlideChangeEnd: function(swiper){ 
+	   		            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+	   		          } 
+	   		   });
+	   		$(function() {
+	   		    $("#sw12").hover(function() {
+	   		        $("#guang").animate({
+	   		            left: '1450'
+	   		        }, 1000);
+	   		    }, function() {
+	   		        $("#guang").stop(true, true).css('left', '-450px');
+	   		    })
+
+
+	   		  
+	   		  
+
+	   		})
+	   		$(".video").click(function(event) {
+	   			$(this).find('.bofang').hide();
+	   		});
+
+	   		// $(document).on("pageinit","#pageone",function(){
+	   		//   $('body').on("swipeleft",function(){
+	   		//     alert("您向左滑动！");
+	   		//   });                       
+	   		// });
+	   		// 
+	 
+
+
+	   	</script>
+
+	 
+</html>
